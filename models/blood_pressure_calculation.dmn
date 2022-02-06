@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="BloodPressureCalculation" name="Blood Pressure Calculation" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.11.1">
+  <decision id="Decision_009kjkz" name="BloodPressureCalculation">
+    <decisionTable id="DecisionTable_14kh4s5">
+      <input id="Input_1" label="BP" camunda:inputVariable="BP">
+        <inputExpression id="InputExpression_1" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Reading" name="Reading" typeRef="string" />
+      <rule id="DecisionRule_1kgpasc">
+        <description>Low blood pressure</description>
+        <inputEntry id="UnaryTests_1jdb65q">
+          <text>[0..80]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1my2nu7">
+          <text>"Low"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0m7lcvm">
+        <description>Medium blood pressure</description>
+        <inputEntry id="UnaryTests_0ua3uv4">
+          <text>[81..120]</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bt16is">
+          <text>"Mid"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1qwuycc">
+        <description>High blood pressure</description>
+        <inputEntry id="UnaryTests_10fv223">
+          <text>&gt; 120</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jt5cm6">
+          <text>"High"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_009kjkz">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
