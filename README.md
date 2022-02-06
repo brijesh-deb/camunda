@@ -9,6 +9,6 @@
 - username/password: blank
 - A few tables:
   - ACT_GE_BYTEARRAY: Stores the bytearray of model file
-	- ACT_RE_DEPLOYMENT
-	- ACT_RE_PROCDEF: Stores BPMN process details like NAME, KEY, DEPLOYMENT _ID, RESOURCE_NAME
-	- ACT_RE_DECISION_DEF: Stores DMN process details
+  - ACT_RE_DEPLOYMENT
+  - ACT_RE_PROCDEF: Stores BPMN process details like NAME, KEY, DEPLOYMENT _ID, RESOURCE_NAME
+  - ACT_RE_DECISION_DEF: Stores DMN process details
