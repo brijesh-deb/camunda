@@ -2,7 +2,7 @@
 ### Includes
 - Camunda-engine: Springboot microservice with embedded Camunda Engine (uses in-memory H2 database)
 - ExternalTaskClient: Springboot microservice with provides implementation for an external task service is Camunda
-- models: sample BMPM and DMN model. The BPMN model includes a decision(DMN) model
+- models: sample BMPM and DMN models. The BPMN model includes a Business Rule Task(DMN)
 - Camunda.postman_collection.json: Postman collection to test the sample
 ### Camunda Console
 - url: http://localhost:8080/camunda/app/welcome/default/#!/login
