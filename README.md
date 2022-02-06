@@ -4,6 +4,9 @@
 - ExternalTaskClient: Springboot microservice with provides implementation for an external task service is Camunda
 - models: sample BMPM and DMN model. The BPMN model includes a decision(DMN) model
 - Camunda.postman_collection.json: Postman collection to test the sample
+### Camunda Console
+- url: http://localhost:8080/camunda/app/welcome/default/#!/login
+- user/password: demo/demo
 ### H2 database
 - url: http://localhost:8080/h2-console
 - username/password: blank
